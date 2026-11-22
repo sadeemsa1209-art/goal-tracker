@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>متابع أهدافي</title>
+  <!-- ربط ملف التنسيق CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <h1>🎯 متابع الأهداف الذكي</h1>
+
+    <!-- نموذج إضافة هدف جديد -->
+    <form id="goalForm">
+      <input type="text" id="goalInput" placeholder="اكتبي هدفك هنا..." required>
+
+      <!-- اختيار الأهمية -->
+      <select id="priorityInput">
+        <option value="high">مهم جداً (أحمر)</option>
+        <option value="medium">متوسط (أصفر)</option>
+        <option value="low">عادي (أخضر)</option>
+      </select>
+<!-- اختيار المدى -->
+      <select id="termInput">
+        <option value="short">قريب المدى</option>
+        <option value="long">بعيد المدى</option>
+      </select>
+
+      <button type="submit">إضافة الهدف</button>
+    </form>
+
+    <!-- قائمة عرض الأهداف -->
+    <div id="goalsList"></div>
+  </div>
+
+  <!-- ربط ملف الجافاسكربت JS في نهاية الصفحة -->
+  <script src="script.js"></script>
+</body>
+</html>
