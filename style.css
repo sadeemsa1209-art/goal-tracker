@@ -1,0 +1,58 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f1ea; /* لون خلفية ترابي هادئ */
+  color: #333;
+  direction: rtl;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+app-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  text-align: center;
+  color: #4a5d4e; /* زيتوني هادئ */
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+#goalForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+/* تنسيق الخانات والأزرار */
+input[type="text"], select {
+  padding: 12px;
+  border: 1px solid #e0dcd3;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+button {
+  background-color: #4a5d4e;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3b4b3f;
+}
+/* تمييز الأولويات بالألوان للبطاقات التي ستظهر مستقبلاً */
+.priority-high { border-right: 6px solid #e74c3c; }   /* أحمر */
+.priority-medium { border-right: 6px solid #f1c40f; } /* أصفر */
+.priority-low { border-right: 6px solid #2ecc71; }    /* أخضر */
